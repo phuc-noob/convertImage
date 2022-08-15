@@ -1,0 +1,7 @@
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\obj\Debug\ConvertTifToJpg.csprojAssemblyReference.cache
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\obj\Debug\ConvertTifToJpg.csproj.CoreCompileInputs.cache
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\bin\Debug\ConvertTifToJpg.exe.config
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\bin\Debug\ConvertTifToJpg.exe
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\bin\Debug\ConvertTifToJpg.pdb
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\obj\Debug\ConvertTifToJpg.exe
+C:\Users\84826\source\repos\ConvertTifToJpg\ConvertTifToJpg\obj\Debug\ConvertTifToJpg.pdb
