@@ -35,13 +35,31 @@ namespace ConvertTifToJpg
          Image img = Image.FromFile(path);
          if (img.Width > 256)
          {
-            Bitmap imgbitmap = new Bitmap(img);
-            Image Convert = (Image)(new Bitmap(img, new Size(256,img.Height/(img.Width/156))));
-            Convert.Save(dir + Path.GetFileNameWithoutExtension(path)+"_256"+".jpg",ImageFormat.Tiff);
-            Console.WriteLine(dir);
+            if(img.Width > img.Height)
+            {
+               
+               Bitmap imgbitmap = new Bitmap(img);
+               Image Convert = (Image)(new Bitmap(img, new Size(256, img.Height / (img.Width / 256))));
+               Convert.Save(dir + Path.GetFileNameWithoutExtension(path) + "_256" + ".jpg", ImageFormat.Tiff);
+               
+               Console.WriteLine(dir);
+            }
+            else
+            {
+               
+               Console.WriteLine("--------------------");
+               Bitmap imgbitmap = new Bitmap(img);
+               Image Convert = (Image)(new Bitmap(img, new Size(img.Width / (img.Height / 256), 256)));
+               Convert.Save(dir + Path.GetFileNameWithoutExtension(path) + "_256" + ".jpg", ImageFormat.Tiff);
+               
+               Console.WriteLine(dir);
+            }
+            
          }
          else
          {
+            Console.WriteLine("width : " + img.Width);
+            Console.WriteLine("height : " + img.Height);
             Console.WriteLine(img.Width);
          }
       }
